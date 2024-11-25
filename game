@@ -1,0 +1,17 @@
+geuss = ""
+secarate_world = 'suraj'
+geuss_limit = 3
+geuss_count= 0
+outof_geuss = False
+
+while geuss != secarate_world and not(outof_geuss):
+  geuss = input('geuss')
+  geuss_count +=1
+    
+    
+  if geuss_limit < geuss_count:
+       outof_geuss = True  
+if outof_geuss:
+  print('out of geuss')
+else:
+  print('you win')         

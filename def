@@ -1,0 +1,21 @@
+# def suraj(n,hight):
+#     print('hello {} your height is {}'.format(n,hight))
+# suraj('manish',170)  
+# suraj('sanket',160)
+
+# def cube(num):
+#     return num**3
+# result=cube(4)
+# print(result)
+
+def big(num1,num2,num3):
+    if num1>=num2 or num1>=num3:
+        return num1
+    elif num2>=num1 and num2>=num3:
+        return num2
+    else:
+        return num3
+    
+result = big(1,2,3)
+print(result)    
+    

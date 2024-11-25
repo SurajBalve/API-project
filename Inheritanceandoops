@@ -1,0 +1,25 @@
+class empolyee:
+    name= "suraj"
+    salary=10000
+    def show(self):
+        print(f'The name of employee is {self.name} and salary is {self.salary}')
+
+class coder:
+    langauge= "pyhton"
+    def code(self):
+        print(f'This employee knows {self.langauge}')         
+
+class programmer(empolyee,coder):
+    def data(self):
+        print(f'He is {self.name} and good in {self.langauge}')    
+        # Here class empolyee name properties (attributes) and 
+        # class langauge langauge properties (attributes) are used in class programmer
+a=empolyee()      
+a.show()
+b= coder()
+b.code()
+c=programmer()
+c.data()
+
+#note 'super().__init__() ' is use after "def__init__"  
+# costructor to print parent constructor
